@@ -18,7 +18,7 @@ mongoDB();
 app.use(express.json());
 //middlewares
 app.use(cors({
-  origin: "http://localhost:5173"
+  origin: ["http://localhost:5173", "https://resume-builder-shreyashpgs-projects.vercel.app/"]
 }));
 
 //routes
