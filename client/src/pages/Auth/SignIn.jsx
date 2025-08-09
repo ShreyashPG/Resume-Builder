@@ -30,7 +30,7 @@ export default function SignIn() {
                 email: result?.user?.email,
                 avatar: result?.user?.photoURL
             };
-            const response = await axios.post(`${BASE_URL}/auth/google-sign-in`, formData);
+            const response = await axios.post(`${BASE_URL}/api/auth/google-sign-in`, formData);
             // console.log(response?.data?.user);
             dispatch(signInSuccess(response?.data?.user));
             toast.success(response?.data?.message, {
