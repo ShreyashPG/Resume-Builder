@@ -35,15 +35,6 @@ const Templates = () => {
                     <img className="template" src={resume2} alt="Template 2" width={'280px'} height={'380px'} />
                     <p onClick={() => handleResumeClick(2)}>Use Template</p>
                 </div>
-                {/* Add more templates as needed */}
-                <div onClick={() => handleTemplateClick(resume2)}>
-                    <img className="template" src={resume2} alt="Template 3" width={'280px'} height={'380px'} />
-                    <p onClick={() => handleResumeClick(3)}>Use Template</p>
-                </div>
-                <div onClick={() => handleTemplateClick(resume2)}>
-                    <img className="template" src={resume2} alt="Template 4" width={'280px'} height={'380px'} />
-                    <p onClick={() => handleResumeClick(4)}>Use Template</p>
-                </div>
             </div>
             {selectedTemplate && (
                 <div className="template-preview-overlay" onClick={handleClose}>
