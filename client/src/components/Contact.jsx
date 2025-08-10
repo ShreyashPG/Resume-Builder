@@ -46,7 +46,7 @@ const Contact = () => {
             Contact Information
           </Typography>
 
-          <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+          {/* <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
             <IconButton
               sx={{
                 backgroundColor: "#FFECD6",
@@ -56,8 +56,30 @@ const Contact = () => {
             >
               <Call />
             </IconButton>
-            <Typography>Phone: 9561826314</Typography>
-          </div>
+            <Typography>Phone: </Typography>
+          </div> */}
+          <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "20px",
+    marginTop: "10px",
+  }}
+>
+  <IconButton
+    sx={{
+      backgroundColor: "#E6F4F1", // light teal for portfolio vibe
+      borderRadius: "50%",
+      padding: "10px",
+    }}
+    onClick={() =>
+      handleSocialMediaClick("https://portfolio-git-main-shreyashpgs-projects.vercel.app/")
+    }
+  >
+    <Public /> {/* Globe icon for portfolio */}
+  </IconButton>
+  <Typography>Portfolio</Typography>
+</div>
 
           <div
             style={{
@@ -102,7 +124,7 @@ const Contact = () => {
             >
               <LinkedIn />
             </IconButton>
-            <Typography>Linkden</Typography>
+            <Typography>Linkedin</Typography>
           </div>
         </CardContent>
       </Card>
