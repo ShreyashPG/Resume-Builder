@@ -6,7 +6,7 @@ import {
   Card,
   CardContent,
 } from "@mui/material";
-import { Call, MailOutline, LinkedIn } from "@mui/icons-material";
+import { Public, Call, MailOutline, LinkedIn } from "@mui/icons-material";
 
 const Contact = () => {
   const handleSocialMediaClick = (url) => {
