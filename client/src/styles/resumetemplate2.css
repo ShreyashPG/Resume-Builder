@@ -339,3 +339,25 @@ a {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+
+.page-break-avoid {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.resume-container {
+  overflow: visible !important;
+  min-height: auto !important;
+}
+.header-section {
+  margin-bottom: 20px;
+}
+section {
+  margin-bottom: 20px;
+}
+@media print {
+  .resume-container {
+    box-shadow: none;
+    margin: 0;
+    padding: 1rem 2rem;
+  }
+}

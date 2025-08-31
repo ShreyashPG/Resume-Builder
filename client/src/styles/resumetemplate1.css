@@ -476,3 +476,50 @@ body {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+
+
+/* Page break handling */
+.page-break-avoid {
+  page-break-inside: avoid !important;
+  break-inside: avoid !important;
+}
+
+/* Ensure proper container sizing for PDF */
+.resume-container {
+  overflow: visible !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+/* Fix for achievements and extra-curricular lists */
+.achievements .list ul,
+.extra-curricular .extra-list ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* Header section should not duplicate */
+.header-section {
+  margin-bottom: 20px;
+}
+
+/* Ensure proper margins between sections */
+.education-info,
+.skills,
+.links,
+.subjects,
+.experience,
+.projects,
+.achievements,
+.extra-curricular {
+  margin-bottom: 20px;
+}
+
+/* Print specific styles */
+@media print {
+  .resume-container {
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 1rem 2rem !important;
+  }
+}
