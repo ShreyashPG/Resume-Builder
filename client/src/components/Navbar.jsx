@@ -148,6 +148,13 @@ const Navbar = () => {
 
           {currentUser ? (
             <>
+              <Button
+      color="inherit"
+      onClick={() => window.open("https://cover-letter-sigma.vercel.app/", "_blank")}
+      style={{ marginRight: "10px", fontWeight: 600, textTransform: "none" }}
+    >
+      Generate Cover Letter
+    </Button>
               <Button color="inherit" onClick={handleSectionsClick}>
                 Sections
               </Button>
@@ -194,6 +201,10 @@ const Navbar = () => {
                 <MenuItem onClick={handleProfileClick}>My Profile</MenuItem>
                 <MenuItem onClick={handleTemplateClick}>Templates</MenuItem>
                 <MenuItem onClick={handleContactUsClick}>Contact Us</MenuItem>
+<MenuItem onClick={() => window.open("https://cover-letter-sigma.vercel.app/", "_blank")}>
+  <DescriptionIcon style={{ marginRight: 8 }} />
+  Generate Cover Letter
+</MenuItem>
                 <MenuItem onClick={handleLogout}>Logout</MenuItem>
               </Menu>
             </>
